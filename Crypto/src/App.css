@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  border-radius: 50%; /* Esto redondeará las esquinas de tu logo */
+  background: transparent; /* Esto hará que el fondo sea transparente */
+}
+
+
+
+.extra{
+  font-size: 110px;
+  color:-webkit-linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+}
+
+.extra:hover{
+  color: rgb(3, 167, 139);
+}
+
