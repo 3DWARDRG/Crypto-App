@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  padding-top: 0;
   text-align: center;
 }
 
@@ -21,3 +21,28 @@
   color: rgb(3, 167, 139);
 }
 
+.new{
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.table-bordered.new{
+  border: 1px solid #00000000;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.527);
+  color: #ffffff;
+}
+
+
+.navbar.style{
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.473);
+  background-color: rgba(0, 0, 0, 0.116);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: sticky;
+  top: 0;
+  
+}
+
+th{
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.315);
+  padding: 0.7rem 1rem;
+}

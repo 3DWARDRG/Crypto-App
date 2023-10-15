@@ -1,5 +1,5 @@
 .green {
-  color: green;
+  color: rgb(1, 212, 1);
 }
 .red {
   color: red;
@@ -9,7 +9,7 @@
   height: 0; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 10px solid green;
+  border-bottom: 10px solid rgb(1, 212, 1);
 }
 .negative {
   width: 0; 
@@ -30,4 +30,6 @@
 
 td{
   width: 300px;
+  border: 0;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.315);
 }

@@ -8,7 +8,7 @@ function App () {
   const [busqueda, setBusqueda] = useState('')
 
   useEffect(() => {
-    fetch('https://api.coinstats.app/public/v1/coins?skip=0&limit=12&currency=USD')
+    fetch('https://api.coinstats.app/public/v1/coins?skip=0&limit=100&currency=USD')
       .then(response => response.json())
       .then(data =>{
         setDatos(data.coins)
@@ -39,12 +39,12 @@ function App () {
   }
 
   return (
-    <>
-<nav className="navbar navbar-expand-lg navbar-light">
+    <div className='container-fluid'>
+<nav className="navbar style navbar-expand-lg navbar-light">
   <div className="container-fluid">
   <a className="navbar-brand fs-1" href="#">
-    <img className='logo mx-4' src='/HeadlogotipoCryptoApp.webp' alt='logotipo-Head' />
-    Crypto APP
+    <img className='logo mx-4 ' src='/2HeadlogotipoCryptoApp.webp' alt='logotipo-Head' />
+    CRYPTO APP
     </a>
     <div >
       <form className="d-flex" role="search">
@@ -55,9 +55,9 @@ function App () {
   </div>
 </nav>
       {/* <!-- container -->  */}
-
-      <table className='table new table-hover table align-middle my-3 table-responsive'>
-        <thead className='table-dark'>
+<div className='table-container'>
+      <table className='new table-hoveralign-middle my-3 table-responsive table-bordered'>
+        <thead >
           <tr >
             <th scope='col'>Rank</th>
             <th scope='col'>General</th>
@@ -90,9 +90,10 @@ function App () {
 
         </tbody>
       </table>
+      </div>
       {/* <!-- /container --> */}
 
-    </>
+    </div>
   )
 }
 
